@@ -1,0 +1,22 @@
+Okay first you want to create a TextMeshPro object. Its under UI.
+In Canvas (component), set render mode to "Screen Space - Camera". (idk why we have to do this, it was in the video I saw. Could be game breaking lol)
+  After you select that option you can drag the main camera into the "Render Camera"
+To change the font to Halloween. Go from my assets->TextMeshPro->Resources->Fonts&Materials and drag that into TextMeshPro's component Main Settings->Font Asset
+You might have to zoom waaaay out to see where the text spawns at first. Width and Height determine how far the text can spread.
+  I kept mine at a width of 250, height of 10, and font 60.
+
+Create an empty object. Name is ScoreTracker.
+Add the CandyScore script to this. This object will keep track of the score.
+Drag the TextMeshPro object into the script component of ScoreTracker labeled "Text"
+
+For each candy:
+-Add box collider 2D component 
+  Checkmark "Is Trigger"
+-Add the candy script.
+  Custom the candy value to whatever you want but keep it consistent!
+Remember you can ctrl click the objects to highlight multiple at once. Then when adding one component to an object it'll update it for all selected objects.
+  
+  Tags:
+  -Candy (I don't know if I still have this used but just label it anyways in case)
+  -Player (should already be there)
+  
